@@ -1,17 +1,16 @@
 from fastapi import FastAPI
 from app.core.config import settings
-from app.db.session import engine
+from app.api.routes.workouts import router as workouts_router
+from app.db.init_db import init_db
 
-app = FastAPI(
-    title=settings.APP_NAME
-)
+app = FastAPI(title=settings.APP_NAME)
+
+app.include_router(workouts_router)
 
 @app.on_event("startup")
-def dbInitialization():
-    Base.metadata.create_all(bind=engine)
-
+def startup():
+    init_db()
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}    
-    
+    return {"status": "ok"}
