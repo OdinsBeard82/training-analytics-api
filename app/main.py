@@ -14,3 +14,6 @@ def startup():
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+from app.core.config import settings
+print("BOOT DATABASE_URL =", settings.DATABASE_URL)
