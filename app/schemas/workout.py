@@ -1,5 +1,7 @@
 from pydantic import BaseModel
 from datetime import date
+from fastapi import APIRouter
+
 
 class WorkoutCreate(BaseModel):
     name: str
@@ -15,4 +17,3 @@ class WorkoutRead(BaseModel):
     model_config = {
         "from_attributes": True
     }
-
