@@ -1,5 +1,14 @@
 # Training Analytics API
 
+  ## Live Demo
+
+**Base URL:** https://training-analytics-api.onrender.com
+
+> Note: hosted on Render's free tier — first request may take ~50 seconds to wake up.
+
+Interactive API docs: https://training-analytics-api.onrender.com/docs
+
+
 A production-ready REST API for logging and retrieving workout sessions, built with Python, FastAPI, SQLAlchemy, and PostgreSQL.
 
 ## Tech Stack
@@ -125,11 +134,4 @@ app/
 * Deploy to Render
 * Add test coverage with pytest
 
-  ## Live Demo
-
-**Base URL:** https://training-analytics-api.onrender.com
-
-> Note: hosted on Render's free tier — first request may take ~50 seconds to wake up.
-
-Interactive API docs: https://training-analytics-api.onrender.com/docs
 
