@@ -131,7 +131,6 @@ app/
 * Add DELETE and PUT endpoints
 * Add user authentication (JWT)
 * Add filtering by date range
-* Deploy to Render
 * Add test coverage with pytest
 
 
