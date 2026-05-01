@@ -89,6 +89,8 @@ The API will run at `http://localhost:8000`
 Interactive docs available at `http://localhost:8000/docs`
 
 ## Project Structure
+
+```
 app/
 ├── api/
 │   └── routes/
@@ -106,6 +108,7 @@ app/
 ├── schemas/
 │   └── workout.py          # Pydantic schemas
 └── main.py                 # Application entry point
+```
 
 ## Validation
 
